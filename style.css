@@ -1,0 +1,78 @@
+/* *** PAGE SETTINGS *** */
+body {
+  text-align: center;
+  background-color: #011f3f;
+}
+
+#level-title {
+  /* font-family: 'Press Start 2P', cursive; */
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+/* *** GAME EVENTS*** */
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.blink {
+  animation: blink 1s;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    color: grey;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* *** TILES STYLE *** */
+.tile-container {
+  display: grid;
+  grid-template-rows: 180px 180px;
+  grid-template-columns: 180px 180px;
+  grid-gap: 45px;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 20%;
+}
+
+.red {
+  background-color: #f24c22;
+}
+
+.green {
+  background-color: #3bba00;
+}
+
+.blue {
+  background-color: #007bef;
+}
+
+.yellow {
+  background-color: #e0e40f;
+}
